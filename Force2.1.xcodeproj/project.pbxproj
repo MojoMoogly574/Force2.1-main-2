@@ -1,0 +1,729 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A1305E92A2CFAEA00147CC1 /* Workout+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1305E82A2CFAEA00147CC1 /* Workout+Extension.swift */; };
+		4A1305EB2A2CFFFA00147CC1 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1305EA2A2CFFFA00147CC1 /* String+Extension.swift */; };
+		4A1305ED2A2D001F00147CC1 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1305EC2A2D001F00147CC1 /* RatingView.swift */; };
+		4A1305EF2A2D0CF800147CC1 /* ShowFiltersScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1305EE2A2D0CF800147CC1 /* ShowFiltersScreen.swift */; };
+		4A1305F12A2D0F3500147CC1 /* FiltersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1305F02A2D0F3500147CC1 /* FiltersViewModel.swift */; };
+		4ADA49822922BFA100954F10 /* Force2_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49812922BFA100954F10 /* Force2_1App.swift */; };
+		4ADA49842922BFA100954F10 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49832922BFA100954F10 /* ContentView.swift */; };
+		4ADA49862922BFA100954F10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ADA49852922BFA100954F10 /* Assets.xcassets */; };
+		4ADA49892922BFA100954F10 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ADA49882922BFA100954F10 /* Preview Assets.xcassets */; };
+		4ADA49932922BFA100954F10 /* Force2_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49922922BFA100954F10 /* Force2_1Tests.swift */; };
+		4ADA499D2922BFA100954F10 /* Force2_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA499C2922BFA100954F10 /* Force2_1UITests.swift */; };
+		4ADA499F2922BFA100954F10 /* Force2_1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA499E2922BFA100954F10 /* Force2_1UITestsLaunchTests.swift */; };
+		4ADA49B12922C04D00954F10 /* AddWorkoutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49B02922C04D00954F10 /* AddWorkoutScreen.swift */; };
+		4ADA49B32922C06000954F10 /* WorkoutListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49B22922C06000954F10 /* WorkoutListScreen.swift */; };
+		4ADA49B52922C07F00954F10 /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49B42922C07F00954F10 /* CoreDataProvider.swift */; };
+		4ADA49B72922C0B700954F10 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49B62922C0B700954F10 /* DateFormat.swift */; };
+		4ADA49B92922C0E200954F10 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49B82922C0E200954F10 /* ViewExtension.swift */; };
+		4ADA49BB2922C11300954F10 /* WorkoutListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49BA2922C11300954F10 /* WorkoutListViewModel.swift */; };
+		4ADA49BE2922C28C00954F10 /* DailyWorkout.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49BC2922C28C00954F10 /* DailyWorkout.xcdatamodeld */; };
+		4ADA49C32922C5EB00954F10 /* AddWorkoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49C22922C5EB00954F10 /* AddWorkoutViewModel.swift */; };
+		4ADA49C52922C63B00954F10 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49C42922C63B00954F10 /* HapticManager.swift */; };
+		4ADA49C72922C6E300954F10 /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49C62922C6E300954F10 /* ViewManager.swift */; };
+		4ADA49CD29230BC800954F10 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49CC29230BC800954F10 /* HistoryView.swift */; };
+		4ADA49CF29230DA400954F10 /* EditScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49CE29230DA400954F10 /* EditScreen.swift */; };
+		4ADA49D12923199600954F10 /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49D02923199600954F10 /* DetailScreen.swift */; };
+		4ADA49D329233B4400954F10 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49D229233B4400954F10 /* BaseModel.swift */; };
+		4ADA49D529233E8F00954F10 /* Review+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49D429233E8F00954F10 /* Review+Extension.swift */; };
+		4ADA49D72924125600954F10 /* AddExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49D62924125600954F10 /* AddExerciseViewModel.swift */; };
+		4ADA49D92924149F00954F10 /* Exercise + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49D82924149F00954F10 /* Exercise + Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4ADA498F2922BFA100954F10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4ADA49762922BFA100954F10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4ADA497D2922BFA100954F10;
+			remoteInfo = Force2.1;
+		};
+		4ADA49992922BFA100954F10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4ADA49762922BFA100954F10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4ADA497D2922BFA100954F10;
+			remoteInfo = Force2.1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4A1305E82A2CFAEA00147CC1 /* Workout+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Workout+Extension.swift"; sourceTree = "<group>"; };
+		4A1305EA2A2CFFFA00147CC1 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		4A1305EC2A2D001F00147CC1 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		4A1305EE2A2D0CF800147CC1 /* ShowFiltersScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowFiltersScreen.swift; sourceTree = "<group>"; };
+		4A1305F02A2D0F3500147CC1 /* FiltersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersViewModel.swift; sourceTree = "<group>"; };
+		4ADA497E2922BFA100954F10 /* Force2.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Force2.1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ADA49812922BFA100954F10 /* Force2_1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Force2_1App.swift; sourceTree = "<group>"; };
+		4ADA49832922BFA100954F10 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4ADA49852922BFA100954F10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4ADA49882922BFA100954F10 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4ADA498E2922BFA100954F10 /* Force2.1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Force2.1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ADA49922922BFA100954F10 /* Force2_1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Force2_1Tests.swift; sourceTree = "<group>"; };
+		4ADA49982922BFA100954F10 /* Force2.1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Force2.1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ADA499C2922BFA100954F10 /* Force2_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Force2_1UITests.swift; sourceTree = "<group>"; };
+		4ADA499E2922BFA100954F10 /* Force2_1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Force2_1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4ADA49B02922C04D00954F10 /* AddWorkoutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutScreen.swift; sourceTree = "<group>"; };
+		4ADA49B22922C06000954F10 /* WorkoutListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListScreen.swift; sourceTree = "<group>"; };
+		4ADA49B42922C07F00954F10 /* CoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
+		4ADA49B62922C0B700954F10 /* DateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
+		4ADA49B82922C0E200954F10 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		4ADA49BA2922C11300954F10 /* WorkoutListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListViewModel.swift; sourceTree = "<group>"; };
+		4ADA49BD2922C28C00954F10 /* DailyWorkout.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DailyWorkout.xcdatamodel; sourceTree = "<group>"; };
+		4ADA49C22922C5EB00954F10 /* AddWorkoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutViewModel.swift; sourceTree = "<group>"; };
+		4ADA49C42922C63B00954F10 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		4ADA49C62922C6E300954F10 /* ViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
+		4ADA49CC29230BC800954F10 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		4ADA49CE29230DA400954F10 /* EditScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditScreen.swift; sourceTree = "<group>"; };
+		4ADA49D02923199600954F10 /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
+		4ADA49D229233B4400954F10 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		4ADA49D429233E8F00954F10 /* Review+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Review+Extension.swift"; sourceTree = "<group>"; };
+		4ADA49D62924125600954F10 /* AddExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseViewModel.swift; sourceTree = "<group>"; };
+		4ADA49D82924149F00954F10 /* Exercise + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercise + Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4ADA497B2922BFA100954F10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ADA498B2922BFA100954F10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ADA49952922BFA100954F10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4ADA49752922BFA100954F10 = {
+			isa = PBXGroup;
+			children = (
+				4ADA49812922BFA100954F10 /* Force2_1App.swift */,
+				4ADA49802922BFA100954F10 /* Force2.1 */,
+				4ADA49912922BFA100954F10 /* Force2.1Tests */,
+				4ADA499B2922BFA100954F10 /* Force2.1UITests */,
+				4ADA497F2922BFA100954F10 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4ADA497F2922BFA100954F10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4ADA497E2922BFA100954F10 /* Force2.1.app */,
+				4ADA498E2922BFA100954F10 /* Force2.1Tests.xctest */,
+				4ADA49982922BFA100954F10 /* Force2.1UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4ADA49802922BFA100954F10 /* Force2.1 */ = {
+			isa = PBXGroup;
+			children = (
+				4ADA49AF2922BFF000954F10 /* Extensions */,
+				4ADA49AE2922BFE600954F10 /* Managers */,
+				4ADA49AD2922BFDB00954F10 /* Models */,
+				4ADA49AC2922BFD300954F10 /* Screens */,
+				4ADA49AB2922BFC900954F10 /* Views */,
+				4ADA49852922BFA100954F10 /* Assets.xcassets */,
+				4ADA49BC2922C28C00954F10 /* DailyWorkout.xcdatamodeld */,
+				4ADA49872922BFA100954F10 /* Preview Content */,
+			);
+			path = Force2.1;
+			sourceTree = "<group>";
+		};
+		4ADA49872922BFA100954F10 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4ADA49882922BFA100954F10 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4ADA49912922BFA100954F10 /* Force2.1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4ADA49922922BFA100954F10 /* Force2_1Tests.swift */,
+			);
+			path = Force2.1Tests;
+			sourceTree = "<group>";
+		};
+		4ADA499B2922BFA100954F10 /* Force2.1UITests */ = {
+			isa = PBXGroup;
+			children = (
+				4ADA499C2922BFA100954F10 /* Force2_1UITests.swift */,
+				4ADA499E2922BFA100954F10 /* Force2_1UITestsLaunchTests.swift */,
+			);
+			path = Force2.1UITests;
+			sourceTree = "<group>";
+		};
+		4ADA49AB2922BFC900954F10 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4ADA49832922BFA100954F10 /* ContentView.swift */,
+				4ADA49CC29230BC800954F10 /* HistoryView.swift */,
+				4A1305EC2A2D001F00147CC1 /* RatingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4ADA49AC2922BFD300954F10 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				4ADA49B02922C04D00954F10 /* AddWorkoutScreen.swift */,
+				4ADA49B22922C06000954F10 /* WorkoutListScreen.swift */,
+				4ADA49CE29230DA400954F10 /* EditScreen.swift */,
+				4ADA49D02923199600954F10 /* DetailScreen.swift */,
+				4A1305EE2A2D0CF800147CC1 /* ShowFiltersScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		4ADA49AD2922BFDB00954F10 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4ADA49BA2922C11300954F10 /* WorkoutListViewModel.swift */,
+				4ADA49C22922C5EB00954F10 /* AddWorkoutViewModel.swift */,
+				4ADA49D229233B4400954F10 /* BaseModel.swift */,
+				4ADA49D62924125600954F10 /* AddExerciseViewModel.swift */,
+				4A1305F02A2D0F3500147CC1 /* FiltersViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4ADA49AE2922BFE600954F10 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4ADA49B42922C07F00954F10 /* CoreDataProvider.swift */,
+				4ADA49C42922C63B00954F10 /* HapticManager.swift */,
+				4ADA49C62922C6E300954F10 /* ViewManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		4ADA49AF2922BFF000954F10 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4ADA49B62922C0B700954F10 /* DateFormat.swift */,
+				4ADA49B82922C0E200954F10 /* ViewExtension.swift */,
+				4ADA49D429233E8F00954F10 /* Review+Extension.swift */,
+				4ADA49D82924149F00954F10 /* Exercise + Extension.swift */,
+				4A1305E82A2CFAEA00147CC1 /* Workout+Extension.swift */,
+				4A1305EA2A2CFFFA00147CC1 /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4ADA497D2922BFA100954F10 /* Force2.1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ADA49A22922BFA100954F10 /* Build configuration list for PBXNativeTarget "Force2.1" */;
+			buildPhases = (
+				4ADA497A2922BFA100954F10 /* Sources */,
+				4ADA497B2922BFA100954F10 /* Frameworks */,
+				4ADA497C2922BFA100954F10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Force2.1;
+			productName = Force2.1;
+			productReference = 4ADA497E2922BFA100954F10 /* Force2.1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4ADA498D2922BFA100954F10 /* Force2.1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ADA49A52922BFA100954F10 /* Build configuration list for PBXNativeTarget "Force2.1Tests" */;
+			buildPhases = (
+				4ADA498A2922BFA100954F10 /* Sources */,
+				4ADA498B2922BFA100954F10 /* Frameworks */,
+				4ADA498C2922BFA100954F10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4ADA49902922BFA100954F10 /* PBXTargetDependency */,
+			);
+			name = Force2.1Tests;
+			productName = Force2.1Tests;
+			productReference = 4ADA498E2922BFA100954F10 /* Force2.1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4ADA49972922BFA100954F10 /* Force2.1UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ADA49A82922BFA100954F10 /* Build configuration list for PBXNativeTarget "Force2.1UITests" */;
+			buildPhases = (
+				4ADA49942922BFA100954F10 /* Sources */,
+				4ADA49952922BFA100954F10 /* Frameworks */,
+				4ADA49962922BFA100954F10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4ADA499A2922BFA100954F10 /* PBXTargetDependency */,
+			);
+			name = Force2.1UITests;
+			productName = Force2.1UITests;
+			productReference = 4ADA49982922BFA100954F10 /* Force2.1UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4ADA49762922BFA100954F10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					4ADA497D2922BFA100954F10 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					4ADA498D2922BFA100954F10 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 4ADA497D2922BFA100954F10;
+					};
+					4ADA49972922BFA100954F10 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 4ADA497D2922BFA100954F10;
+					};
+				};
+			};
+			buildConfigurationList = 4ADA49792922BFA100954F10 /* Build configuration list for PBXProject "Force2.1" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4ADA49752922BFA100954F10;
+			productRefGroup = 4ADA497F2922BFA100954F10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4ADA497D2922BFA100954F10 /* Force2.1 */,
+				4ADA498D2922BFA100954F10 /* Force2.1Tests */,
+				4ADA49972922BFA100954F10 /* Force2.1UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4ADA497C2922BFA100954F10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ADA49892922BFA100954F10 /* Preview Assets.xcassets in Resources */,
+				4ADA49862922BFA100954F10 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ADA498C2922BFA100954F10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ADA49962922BFA100954F10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4ADA497A2922BFA100954F10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ADA49C32922C5EB00954F10 /* AddWorkoutViewModel.swift in Sources */,
+				4A1305EF2A2D0CF800147CC1 /* ShowFiltersScreen.swift in Sources */,
+				4A1305EB2A2CFFFA00147CC1 /* String+Extension.swift in Sources */,
+				4ADA49BB2922C11300954F10 /* WorkoutListViewModel.swift in Sources */,
+				4ADA49D72924125600954F10 /* AddExerciseViewModel.swift in Sources */,
+				4ADA49842922BFA100954F10 /* ContentView.swift in Sources */,
+				4ADA49B32922C06000954F10 /* WorkoutListScreen.swift in Sources */,
+				4ADA49D92924149F00954F10 /* Exercise + Extension.swift in Sources */,
+				4ADA49D529233E8F00954F10 /* Review+Extension.swift in Sources */,
+				4ADA49B72922C0B700954F10 /* DateFormat.swift in Sources */,
+				4ADA49D12923199600954F10 /* DetailScreen.swift in Sources */,
+				4ADA49D329233B4400954F10 /* BaseModel.swift in Sources */,
+				4A1305ED2A2D001F00147CC1 /* RatingView.swift in Sources */,
+				4ADA49BE2922C28C00954F10 /* DailyWorkout.xcdatamodeld in Sources */,
+				4ADA49C72922C6E300954F10 /* ViewManager.swift in Sources */,
+				4ADA49CD29230BC800954F10 /* HistoryView.swift in Sources */,
+				4ADA49CF29230DA400954F10 /* EditScreen.swift in Sources */,
+				4ADA49B92922C0E200954F10 /* ViewExtension.swift in Sources */,
+				4ADA49B12922C04D00954F10 /* AddWorkoutScreen.swift in Sources */,
+				4ADA49C52922C63B00954F10 /* HapticManager.swift in Sources */,
+				4A1305E92A2CFAEA00147CC1 /* Workout+Extension.swift in Sources */,
+				4ADA49B52922C07F00954F10 /* CoreDataProvider.swift in Sources */,
+				4A1305F12A2D0F3500147CC1 /* FiltersViewModel.swift in Sources */,
+				4ADA49822922BFA100954F10 /* Force2_1App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ADA498A2922BFA100954F10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ADA49932922BFA100954F10 /* Force2_1Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ADA49942922BFA100954F10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ADA499F2922BFA100954F10 /* Force2_1UITestsLaunchTests.swift in Sources */,
+				4ADA499D2922BFA100954F10 /* Force2_1UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4ADA49902922BFA100954F10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4ADA497D2922BFA100954F10 /* Force2.1 */;
+			targetProxy = 4ADA498F2922BFA100954F10 /* PBXContainerItemProxy */;
+		};
+		4ADA499A2922BFA100954F10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4ADA497D2922BFA100954F10 /* Force2.1 */;
+			targetProxy = 4ADA49992922BFA100954F10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4ADA49A02922BFA100954F10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4ADA49A12922BFA100954F10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4ADA49A32922BFA100954F10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Force2.1/Preview Content\"";
+				DEVELOPMENT_TEAM = W59W3QVKXJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sigmatech.daily-workout.Force2-1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4ADA49A42922BFA100954F10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Force2.1/Preview Content\"";
+				DEVELOPMENT_TEAM = W59W3QVKXJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sigmatech.daily-workout.Force2-1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4ADA49A62922BFA100954F10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W59W3QVKXJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sigmatech.daily-workout.Force2-1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Force2.1.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Force2.1";
+			};
+			name = Debug;
+		};
+		4ADA49A72922BFA100954F10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W59W3QVKXJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sigmatech.daily-workout.Force2-1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Force2.1.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Force2.1";
+			};
+			name = Release;
+		};
+		4ADA49A92922BFA100954F10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W59W3QVKXJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sigmatech.daily-workout.Force2-1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Force2.1;
+			};
+			name = Debug;
+		};
+		4ADA49AA2922BFA100954F10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W59W3QVKXJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sigmatech.daily-workout.Force2-1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Force2.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4ADA49792922BFA100954F10 /* Build configuration list for PBXProject "Force2.1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ADA49A02922BFA100954F10 /* Debug */,
+				4ADA49A12922BFA100954F10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4ADA49A22922BFA100954F10 /* Build configuration list for PBXNativeTarget "Force2.1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ADA49A32922BFA100954F10 /* Debug */,
+				4ADA49A42922BFA100954F10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4ADA49A52922BFA100954F10 /* Build configuration list for PBXNativeTarget "Force2.1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ADA49A62922BFA100954F10 /* Debug */,
+				4ADA49A72922BFA100954F10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4ADA49A82922BFA100954F10 /* Build configuration list for PBXNativeTarget "Force2.1UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ADA49A92922BFA100954F10 /* Debug */,
+				4ADA49AA2922BFA100954F10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4ADA49BC2922C28C00954F10 /* DailyWorkout.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4ADA49BD2922C28C00954F10 /* DailyWorkout.xcdatamodel */,
+			);
+			currentVersion = 4ADA49BD2922C28C00954F10 /* DailyWorkout.xcdatamodel */;
+			path = DailyWorkout.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4ADA49762922BFA100954F10 /* Project object */;
+}
