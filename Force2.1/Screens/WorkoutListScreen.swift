@@ -32,18 +32,20 @@ struct WorkoutListScreen: View {
             workoutListVM.getAllWorkouts()
         }
     }
-    let types = ["Strength", "Power", "Cardio", "HIIT", "Recover"]
+    let types = ["Strength", "Power", "Cardio", "HIIT", "Recover", "Yoga"]
     func colorize(type: String) -> Color {
         switch type {
         case "HIIT":
             return .blue
         case "Recover":
-            return .indigo
+            return .teal
         case "Strength":
             return .orange
         case "Cardio":
             return .red
         case "Power":
+            return .cyan
+        case "Yoga":
             return .green
         default:
             return .gray
@@ -53,19 +55,34 @@ struct WorkoutListScreen: View {
     var body: some View {
         
         
-        VStack{
+            VStack {
+                //MARK:  SEARCH FILTER
+                HStack {
+                    Button("Reset") {
+                        workoutListVM.getAllWorkouts()
+                    }
+                    .padding()
+                    Spacer()
+                    Button("Search") {
+                        filterApplied = true
+                        activeSheet = .showFilters
+                    }
+                }
+                .foregroundColor(.blue)
+                .padding(.trailing, 40)
+                
             List{
                 ForEach(workoutListVM.workouts, id: \.id) { workout in
                     NavigationLink(destination: DetailScreen()){
                         CardView(workout: workout)
                     }
                     .cornerRadius(12)
-                    .padding()
+                .padding(7)
                     //    .background(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)),Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))]), startPoint: .bottom, endPoint: .top))
-                    .background(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)),self.colorize(type: workout.workoutType)]), startPoint: .bottom, endPoint: .top))
+                    .background(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)),self.colorize(type: workout.workoutType)]), startPoint: .bottom, endPoint: .top).opacity(0.4))
                     .overlay(
                         RoundedRectangle(cornerRadius: 10, style: .continuous).stroke(self.colorize(type: workout.workoutType ), lineWidth: 8.0))
-                    .padding(.top, 10)
+                    .padding(.top, 2)
                 }
                 .onDelete(perform: deleteWorkout)
                 
@@ -94,7 +111,7 @@ struct WorkoutListScreen: View {
                 case .addWorkout:
                     AddWorkoutScreen()
                 case .showFilters:
-                    ShowFiltersScreen()
+                    ShowFiltersScreen(workouts: $workoutListVM.workouts)
                 }
             })
             .onAppear(perform: {
@@ -139,7 +156,7 @@ struct CardView: View {
     var body: some View {
         
         HStack {
-            VStack(alignment: .center, spacing: 5) {
+            VStack(alignment: .leading, spacing: 2) {
                 Text(workout.title)
                     .foregroundColor(.white)
                     .accessibilityAddTraits(.isHeader)
@@ -148,9 +165,15 @@ struct CardView: View {
                 Text(workout.objective)
                     .font(.caption)
                     .fontWeight(.semibold)
-                    .foregroundColor(.gray)
+                    .foregroundColor(.blue)
+                HStack {
                 Text(workout.releaseDate ?? "")
                 .font(.footnote)
+              Spacer()
+                    Image(systemName: "star.fill")
+                        .foregroundColor(.yellow)
+                    Text("\(workout.rating!)")
+                }
             }
             .padding(.all)
             .overlay(

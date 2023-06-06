@@ -12,6 +12,7 @@ class AddWorkoutViewModel: ObservableObject {
     var title: String = ""
     var objective: String = ""
     var workoutType: String = ""
+    @Published var rating: Int? = nil
     var releaseDate: Date = Date()
     
     func save() {
@@ -21,6 +22,7 @@ class AddWorkoutViewModel: ObservableObject {
         workout.title = title
         workout.objective = objective
         workout.workoutType = workoutType
+        workout.rating = Double(rating ?? 0)
         workout.releaseDate = releaseDate
         
         manager.save()

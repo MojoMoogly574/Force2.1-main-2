@@ -12,22 +12,24 @@ struct DetailScreen: View {
     @StateObject private var addWorkoutVM = AddWorkoutViewModel()
     @StateObject private var addExerciseVM = ExerciseListViewModel()
     @Environment(\.presentationMode) var presentationMode
-    let types = ["Strength", "Power", "Cardio", "HIIT", "Recover"]
+
+    let types = ["Strength", "Power", "Cardio", "HIIT", "Recover", "Yoga"]
     func colorize(type: String) -> Color {
         switch type {
-            case "HIIT":
-                return .blue
-            case "Recover":
-                return .indigo
-            case "Strength":
-                return .orange
-            case "Cardio":
-                return .red
-            case "Power":
-                return .green
-            default:
-                return .gray
-                
+        case "HIIT":
+            return .blue
+        case "Recover":
+            return .teal
+        case "Strength":
+            return .orange
+        case "Cardio":
+            return .red
+        case "Power":
+            return .cyan
+        case "Yoga":
+            return .green
+        default:
+            return .gray
         }
     }
     var body: some View {

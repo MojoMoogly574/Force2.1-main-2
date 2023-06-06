@@ -179,6 +179,7 @@
 		4ADA49AB2922BFC900954F10 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4ADA49C62922C6E300954F10 /* ViewManager.swift */,
 				4ADA49832922BFA100954F10 /* ContentView.swift */,
 				4ADA49CC29230BC800954F10 /* HistoryView.swift */,
 				4A1305EC2A2D001F00147CC1 /* RatingView.swift */,
@@ -215,7 +216,6 @@
 			children = (
 				4ADA49B42922C07F00954F10 /* CoreDataProvider.swift */,
 				4ADA49C42922C63B00954F10 /* HapticManager.swift */,
-				4ADA49C62922C6E300954F10 /* ViewManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";

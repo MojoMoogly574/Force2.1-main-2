@@ -120,9 +120,8 @@ struct ShowFiltersScreen: View {
                     Button("Search") {
                         
                         if !minimumReviewCount.isEmpty {
-                            workouts =  filtersVM.filterWorkoutsByMinimumReviewCount(minimumReviewCount: Int(minimumReviewCount) ?? 0)
+                            workouts = filtersVM.filterWorkoutsByMinimumReviewCount(minimumReviewCount: Int(minimumReviewCount)  ?? 0)
                         }
-                        
                         presentationMode.wrappedValue.dismiss()
                         
                     }.buttonStyle(PlainButtonStyle())
