@@ -5,40 +5,26 @@
 //  Created by Joseph William DeWeese on 11/15/22.
 //
 
-import Foundation
-import CoreData
-
 
 import Foundation
 import CoreData
 
-class ExerciseListViewModel: ObservableObject {
+class AddExerciseViewModel: ObservableObject {
+
+    var name: String = ""
     
-   @Published var exercises = [ExerciseViewModel]()
-    
-    func getExercisesByWorkout(vm: WorkoutViewModel) {
-        DispatchQueue.main.async {
-            self.exercises = Exercise.getExercisesByWorkoutId(workoutId: vm.id).map(ExerciseViewModel.init)
+    func addExerciseToWorkout(workoutId: NSManagedObjectID) {
+        
+        let workout: Workout? = Workout.byId(id: workoutId)
+        
+        if let workout = workout {
+            let exercise = Exercise(context: Exercise.viewContext)
+            exercise.name = name
+            exercise.addToWorkouts(workout)
+            
+            try? exercise.save()
         }
+        
     }
     
 }
-
-struct ExerciseViewModel {
-    
-    let exercise: Exercise
-    
-    var exerciseId: NSManagedObjectID {
-        return exercise.objectID
-    }
-    
-    var name: String {
-        return exercise.name ?? ""
-    }
-    
-    var workouts: [WorkoutViewModel] {
-        return Workout.byExerciseName(name: name).map(WorkoutViewModel.init)
-    }
-   
-}
-

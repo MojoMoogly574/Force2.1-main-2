@@ -31,11 +31,10 @@ struct AddWorkoutScreen: View {
             return .gray
         }
     }
-    
     var body: some View {
         Form {
             //MARK:  WORKOUT NAME AND DESCRIPTTION
-            Section(header: Text("Add/Edit Workout Details").fontWeight(.bold).foregroundColor(.blue)){
+            Section(header: Text("Add/Edit Workout Details").fontWeight(.bold).foregroundColor(.primary)){
                 
                 TextField("Enter name of workout...", text: $addWorkoutVM.title)
                     .padding()
@@ -45,7 +44,7 @@ struct AddWorkoutScreen: View {
                     .cornerRadius(10)
                     .foregroundColor(.primary)
                 
-                Section(header: Text("Workout Description/Objective").fontWeight(.bold).foregroundColor(.blue)) {
+                Section(header: Text("Workout Description/Objective").fontWeight(.bold).foregroundColor(.primary)) {
                     TextEditor(text: $addWorkoutVM.objective)
                         .frame(maxWidth: .infinity, minHeight: 100, alignment: .leading)
                         .multilineTextAlignment(.leading)
@@ -55,6 +54,7 @@ struct AddWorkoutScreen: View {
                         .cornerRadius(10)
                         .foregroundColor(.primary)
                 }
+                //exercise
             }
             //MARK:  WORKOUT TYPE PICKER
             Picker("Workout Type:", selection: $addWorkoutVM.workoutType) {
@@ -65,29 +65,28 @@ struct AddWorkoutScreen: View {
             }
             .foregroundColor(.primary)
             HStack {
-                Text("Instensity Rating")
+                Text("Instensity Rating:")
             }
-                RatingView(rating: $addWorkoutVM.rating)
-                //MARK:  DATE PICKER
-                DatePicker("Date", selection: $addWorkoutVM.releaseDate)
-                
-                //MARK:  SAVE BUTTON
-                Button("Save"){
-                    HapticManager.notification(type: .success)
-                    addWorkoutVM.save()
-                    presentationMode.wrappedValue.dismiss()
-                }
-                
-                .font(.title)
-                .fontWeight(.bold)
-                .foregroundColor(.white)
-                .cornerRadius(10)
-                .frame(minWidth: 300, maxWidth: .infinity, minHeight: 50, maxHeight: 75)
-                .background(.blue)
-                .cornerRadius(10)
-                .navigationTitle("Add Workout")
+            RatingView(rating: $addWorkoutVM.rating)
+            //MARK:  DATE PICKER
+            DatePicker("Date", selection: $addWorkoutVM.releaseDate)
+            
+            //MARK:  SAVE BUTTON
+            Button("Save"){
+                HapticManager.notification(type: .success)
+                addWorkoutVM.save()
+                presentationMode.wrappedValue.dismiss()
             }
-            .embedInNavigationView()
+            .font(.title)
+            .fontWeight(.bold)
+            .foregroundColor(.white)
+            .cornerRadius(10)
+            .frame(minWidth: 300, maxWidth: .infinity, minHeight: 50, maxHeight: 75)
+            .background(.blue)
+            .cornerRadius(10)
+            .navigationTitle("Add Workout")
+        }
+        .embedInNavigationView()
     }
 }
 

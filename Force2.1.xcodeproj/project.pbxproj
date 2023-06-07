@@ -12,6 +12,7 @@
 		4A1305ED2A2D001F00147CC1 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1305EC2A2D001F00147CC1 /* RatingView.swift */; };
 		4A1305EF2A2D0CF800147CC1 /* ShowFiltersScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1305EE2A2D0CF800147CC1 /* ShowFiltersScreen.swift */; };
 		4A1305F12A2D0F3500147CC1 /* FiltersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1305F02A2D0F3500147CC1 /* FiltersViewModel.swift */; };
+		4A1305F32A2FEFBD00147CC1 /* ExerciseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1305F22A2FEFBD00147CC1 /* ExerciseListViewModel.swift */; };
 		4ADA49822922BFA100954F10 /* Force2_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49812922BFA100954F10 /* Force2_1App.swift */; };
 		4ADA49842922BFA100954F10 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49832922BFA100954F10 /* ContentView.swift */; };
 		4ADA49862922BFA100954F10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ADA49852922BFA100954F10 /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 		4A1305EC2A2D001F00147CC1 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		4A1305EE2A2D0CF800147CC1 /* ShowFiltersScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowFiltersScreen.swift; sourceTree = "<group>"; };
 		4A1305F02A2D0F3500147CC1 /* FiltersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersViewModel.swift; sourceTree = "<group>"; };
+		4A1305F22A2FEFBD00147CC1 /* ExerciseListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListViewModel.swift; sourceTree = "<group>"; };
 		4ADA497E2922BFA100954F10 /* Force2.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Force2.1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ADA49812922BFA100954F10 /* Force2_1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Force2_1App.swift; sourceTree = "<group>"; };
 		4ADA49832922BFA100954F10 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				4ADA49D229233B4400954F10 /* BaseModel.swift */,
 				4ADA49D62924125600954F10 /* AddExerciseViewModel.swift */,
 				4A1305F02A2D0F3500147CC1 /* FiltersViewModel.swift */,
+				4A1305F22A2FEFBD00147CC1 /* ExerciseListViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				4A1305ED2A2D001F00147CC1 /* RatingView.swift in Sources */,
 				4ADA49BE2922C28C00954F10 /* DailyWorkout.xcdatamodeld in Sources */,
 				4ADA49C72922C6E300954F10 /* ViewManager.swift in Sources */,
+				4A1305F32A2FEFBD00147CC1 /* ExerciseListViewModel.swift in Sources */,
 				4ADA49CD29230BC800954F10 /* HistoryView.swift in Sources */,
 				4ADA49CF29230DA400954F10 /* EditScreen.swift in Sources */,
 				4ADA49B92922C0E200954F10 /* ViewExtension.swift in Sources */,

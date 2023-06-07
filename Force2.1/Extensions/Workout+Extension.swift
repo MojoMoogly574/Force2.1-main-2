@@ -104,8 +104,8 @@ extension Workout: BaseModel {
         
         let request: NSFetchRequest<Workout> = Workout.fetchRequest()
         request.predicate = NSPredicate(format: "exercises.name CONTAINS %@", name)
-        //request.predicate = NSPredicate(format: "%K.name CONTAINS %@", #keyPath(Movie.actors), name)
-        //request.predicate = NSPredicate(format: "%K.%K CONTAINS %@", #keyPath(Movie.actors), #keyPath(Actor.name), name)
+        //request.predicate = NSPredicate(format: "%K.name CONTAINS %@", #keyPath(Movie.exercises), name)
+        //request.predicate = NSPredicate(format: "%K.%K CONTAINS %@", #keyPath(Movie.exercises), #keyPath(Actor.name), name)
         
         do {
             return try viewContext.fetch(request)

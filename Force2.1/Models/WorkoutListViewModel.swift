@@ -14,17 +14,16 @@ class WorkoutListViewModel: ObservableObject {
     @Published var workouts = [WorkoutViewModel]()
     
     func deleteWorkout(workout: WorkoutViewModel) {
-        let workout = CoreDataProvider.shared.getWorkoutById(id: workout.id)
+        let workout: Workout? = Workout.byId(id: workout.workoutId)
         if let workout = workout {
-            CoreDataProvider.shared.deleteWorkout(workout)
+            try? workout.delete()
         }
     }
     
     func getAllWorkouts() {
         
-        let workouts = CoreDataProvider.shared.getAllWorkouts()
         DispatchQueue.main.async {
-            self.workouts = workouts.map(WorkoutViewModel.init)
+            self.workouts = Workout.all().map(WorkoutViewModel.init)
         }
     }
 }
@@ -33,7 +32,7 @@ struct WorkoutViewModel {
     
     let workout: Workout
     
-    var id: NSManagedObjectID {
+    var workoutId: NSManagedObjectID {
         return workout.objectID
     }
     

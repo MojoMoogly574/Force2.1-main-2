@@ -10,19 +10,16 @@ import CoreData
 
 extension Exercise:  BaseModel {
     
-    
+    @objc(addWorkoutsObject:) @NSManaged func addToWorkouts(_ value: Workout)
+  
     static func getExercisesByWorkoutId(workoutId: NSManagedObjectID) -> [Exercise] {
-        
-        let request: NSFetchRequest<Exercise> = Exercise.fetchRequest()
-        request.predicate = NSPredicate(format: "workout = %@", workoutId)
-        
-        do {
-            return try CoreDataProvider.shared.viewContext.fetch(request)
-        } catch {
+
+        guard let workout = Workout.byId(id: workoutId) as? Workout,
+              let exercises = workout.exercises
+        else {
+            
             return []
         }
-        
+        return (exercises.name as? [Exercise]) ?? [ ]
     }
-    
 }
-
