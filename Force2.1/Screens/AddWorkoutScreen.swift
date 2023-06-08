@@ -65,7 +65,7 @@ struct AddWorkoutScreen: View {
             }
             .foregroundColor(.primary)
             HStack {
-                Text("Instensity Rating:")
+                Text("Intensity Rating:")
             }
             RatingView(rating: $addWorkoutVM.rating)
             //MARK:  DATE PICKER

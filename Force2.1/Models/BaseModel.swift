@@ -18,7 +18,7 @@ protocol BaseModel: NSManagedObject {
 extension BaseModel {
     
     static var viewContext: NSManagedObjectContext {
-        return CoreDataProvider.shared.viewContext
+        return CoreDataManager.shared.viewContext
     }
     
     func save() throws {

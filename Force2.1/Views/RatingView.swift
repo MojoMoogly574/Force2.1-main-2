@@ -14,9 +14,9 @@ struct RatingView: View {
     private func starType(index: Int) -> String {
         
         if let rating = self.rating {
-            return index <= rating ? "star.fill" : "star"
+            return index <= rating ? "flame.fill" : "flame"
         } else {
-            return "star"
+            return "flame"
         }
         
     }

@@ -22,7 +22,7 @@
 		4ADA499F2922BFA100954F10 /* Force2_1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA499E2922BFA100954F10 /* Force2_1UITestsLaunchTests.swift */; };
 		4ADA49B12922C04D00954F10 /* AddWorkoutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49B02922C04D00954F10 /* AddWorkoutScreen.swift */; };
 		4ADA49B32922C06000954F10 /* WorkoutListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49B22922C06000954F10 /* WorkoutListScreen.swift */; };
-		4ADA49B52922C07F00954F10 /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49B42922C07F00954F10 /* CoreDataProvider.swift */; };
+		4ADA49B52922C07F00954F10 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49B42922C07F00954F10 /* CoreDataManager.swift */; };
 		4ADA49B72922C0B700954F10 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49B62922C0B700954F10 /* DateFormat.swift */; };
 		4ADA49B92922C0E200954F10 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49B82922C0E200954F10 /* ViewExtension.swift */; };
 		4ADA49BB2922C11300954F10 /* WorkoutListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA49BA2922C11300954F10 /* WorkoutListViewModel.swift */; };
@@ -75,7 +75,7 @@
 		4ADA499E2922BFA100954F10 /* Force2_1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Force2_1UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4ADA49B02922C04D00954F10 /* AddWorkoutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutScreen.swift; sourceTree = "<group>"; };
 		4ADA49B22922C06000954F10 /* WorkoutListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListScreen.swift; sourceTree = "<group>"; };
-		4ADA49B42922C07F00954F10 /* CoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
+		4ADA49B42922C07F00954F10 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		4ADA49B62922C0B700954F10 /* DateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
 		4ADA49B82922C0E200954F10 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		4ADA49BA2922C11300954F10 /* WorkoutListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListViewModel.swift; sourceTree = "<group>"; };
@@ -217,7 +217,7 @@
 		4ADA49AE2922BFE600954F10 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				4ADA49B42922C07F00954F10 /* CoreDataProvider.swift */,
+				4ADA49B42922C07F00954F10 /* CoreDataManager.swift */,
 				4ADA49C42922C63B00954F10 /* HapticManager.swift */,
 			);
 			path = Managers;
@@ -388,7 +388,7 @@
 				4ADA49B12922C04D00954F10 /* AddWorkoutScreen.swift in Sources */,
 				4ADA49C52922C63B00954F10 /* HapticManager.swift in Sources */,
 				4A1305E92A2CFAEA00147CC1 /* Workout+Extension.swift in Sources */,
-				4ADA49B52922C07F00954F10 /* CoreDataProvider.swift in Sources */,
+				4ADA49B52922C07F00954F10 /* CoreDataManager.swift in Sources */,
 				4A1305F12A2D0F3500147CC1 /* FiltersViewModel.swift in Sources */,
 				4ADA49822922BFA100954F10 /* Force2_1App.swift in Sources */,
 			);

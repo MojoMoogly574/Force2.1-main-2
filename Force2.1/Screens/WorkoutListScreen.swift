@@ -72,7 +72,7 @@ struct WorkoutListScreen: View {
                 .padding(.trailing, 40)
                 
             List{
-                ForEach(workoutListVM.workouts, id: \.id) { workout in
+                ForEach(workoutListVM.workouts, id:  \.workoutId) { workout in
                     NavigationLink(destination: DetailScreen()){
                         CardView(workout: workout)
                     }

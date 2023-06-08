@@ -16,7 +16,7 @@ extension Review  {
         request.predicate = NSPredicate(format: "workout = %@", workoutId)
         
         do {
-            return try CoreDataProvider.shared.viewContext.fetch(request)
+            return try CoreDataManager.shared.viewContext.fetch(request)
         } catch {
             return []
         }

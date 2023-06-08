@@ -12,7 +12,7 @@ import SwiftUI
 class WorkoutListViewModel: ObservableObject {
     
     @Published var workouts = [WorkoutViewModel]()
-    
+    var exercises: [Exercise] = []
     func deleteWorkout(workout: WorkoutViewModel) {
         let workout: Workout? = Workout.byId(id: workout.workoutId)
         if let workout = workout {
@@ -46,7 +46,7 @@ struct WorkoutViewModel {
     var workoutType: String {
         return workout.workoutType ?? "Not available"
     }
-    
+  
     var releaseDate: String? {
         return workout.releaseDate?.asFormattedString()
     }
